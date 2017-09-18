@@ -403,8 +403,8 @@ span.CodeMirror-selectedtext {
   background: none; }
 
 .CodeMirror {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #F7F7F7;
+  border: 1px solid #E9E9E9;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #333;
@@ -423,9 +423,9 @@ span.CodeMirror-selectedtext {
   padding-bottom: 32px; }
 
 .CodeMirror-fullscreen {
-  background-color: white;
+  background-color: #F7F7F7;
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #E9E9E9;
   bottom: 0;
   height: auto;
   left: 0;
@@ -498,19 +498,19 @@ span.CodeMirror-selectedtext {
   line-height: 2; }
 
 .CodeMirror .CodeMirror-code .cm-header-1 {
-  font-size: 32px; }
+  font-size: 16px; }
 
 .CodeMirror .CodeMirror-code .cm-header-2 {
-  font-size: 26px; }
+  font-size: 16px; }
 
 .CodeMirror .CodeMirror-code .cm-header-3 {
-  font-size: 22px; }
+  font-size: 16px; }
 
 .CodeMirror .CodeMirror-code .cm-header-4 {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .CodeMirror .CodeMirror-code .cm-header-5 {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .CodeMirror .CodeMirror-code .cm-header-6 {
   font-size: 16px; }
@@ -520,13 +520,13 @@ span.CodeMirror-selectedtext {
   font-weight: 600; }
 
 .CodeMirror .CodeMirror-code .cm-comment {
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 13px;
   padding: 6px 0 3px; }
 
 .CodeMirror .CodeMirror-code span.CodeMirror-selectedtext.cm-comment {
-  background-color: #f2f2f2; }
+  background-color: #eaeaea; }
 
 .CodeMirror .CodeMirror-code .cm-quote {
   color: #777; }
@@ -544,8 +544,8 @@ span.CodeMirror-selectedtext {
 
 .editor-preview-side {
   border: 0;
-  border-left: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-left: 1px solid #E9E9E9;
+  border-top: 1px solid #E9E9E9;
   bottom: 0;
   position: fixed;
   right: 0;
@@ -555,7 +555,7 @@ span.CodeMirror-selectedtext {
 
 .editor-preview,
 .editor-preview-side {
-  background-color: #fff;
+  background-color: #FCFCFC;
   box-sizing: border-box;
   color: #333;
   display: none;
@@ -563,10 +563,10 @@ span.CodeMirror-selectedtext {
   font-size: 16px;
   line-height: 1.5;
   overflow: auto;
-  padding: 0 15px 15px; }
+  padding: 30px; }
   .editor-preview pre,
   .editor-preview-side pre {
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 13px;
     line-height: 1.2;
@@ -579,6 +579,70 @@ span.CodeMirror-selectedtext {
       background-color: transparent;
       font-size: 13px;
       padding: 0; }
+  .editor-preview a,
+  .editor-preview-side a {
+    text-decoration: underline;
+    color: #333; }
+  .editor-preview h1,
+  .editor-preview h2,
+  .editor-preview h3,
+  .editor-preview h4,
+  .editor-preview h5,
+  .editor-preview h6,
+  .editor-preview-side h1,
+  .editor-preview-side h2,
+  .editor-preview-side h3,
+  .editor-preview-side h4,
+  .editor-preview-side h5,
+  .editor-preview-side h6 {
+    text-align: center; }
+  .editor-preview h1,
+  .editor-preview-side h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 3em; }
+  .editor-preview h2,
+  .editor-preview-side h2 {
+    margin-bottom: 2em; }
+  .editor-preview h3,
+  .editor-preview-side h3 {
+    margin-bottom: 1em; }
+  .editor-preview p,
+  .editor-preview-side p {
+    margin-bottom: 1.5em; }
+  .editor-preview p,
+  .editor-preview ul,
+  .editor-preview-side p,
+  .editor-preview-side ul {
+    font-size: 1.6rem; }
+  .editor-preview ul,
+  .editor-preview-side ul {
+    padding-left: 3em; }
+  .editor-preview blockquote,
+  .editor-preview-side blockquote {
+    background: none;
+    margin-left: 1em;
+    font-style: italic;
+    margin-bottom: 0; }
+  .editor-preview code,
+  .editor-preview-side code {
+    padding: 0; }
+  .editor-preview pre,
+  .editor-preview-side pre {
+    margin-bottom: 1.5em; }
+  .editor-preview pre,
+  .editor-preview code,
+  .editor-preview-side pre,
+  .editor-preview-side code {
+    color: #333; }
+  .editor-preview table thead,
+  .editor-preview-side table thead {
+    color: #333; }
+  .editor-preview table th,
+  .editor-preview table td,
+  .editor-preview-side table th,
+  .editor-preview-side table td {
+    font-size: 14px; }
 
 .editor-preview-active,
 .editor-preview-active-side {
@@ -586,7 +650,7 @@ span.CodeMirror-selectedtext {
 
 .editor-preview table,
 .editor-preview-side table {
-  background-color: white;
+  background-color: #F7F7F7;
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
@@ -603,12 +667,12 @@ span.CodeMirror-selectedtext {
   .editor-preview-side table th,
   .editor-preview-side table td {
     border: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #E9E9E9;
     padding: 5px;
     text-align: left; }
   .editor-preview table th,
   .editor-preview-side table th {
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
     font-weight: 600; }
 
 .editor-preview audio:not([controls]),
@@ -628,8 +692,8 @@ span.CodeMirror-selectedtext {
   width: 100%; }
 
 .editor-toolbar {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #F7F7F7;
+  border: 1px solid #E9E9E9;
   border-bottom: 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -661,7 +725,7 @@ span.CodeMirror-selectedtext {
     text-decoration: none !important;
     width: 30px; }
     .editor-toolbar a.active, .editor-toolbar a:hover {
-      border-color: #ddd;
+      border-color: #E9E9E9;
       color: #333 !important; }
     .editor-toolbar a::before {
       line-height: 30px; }
@@ -683,7 +747,7 @@ span.CodeMirror-selectedtext {
     .editor-toolbar a.fa-header-smaller::after {
       content: "▼"; }
   .editor-toolbar i.separator {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #E9E9E9;
     color: transparent;
     display: inline-block;
     margin: 0 7.5px;
@@ -693,7 +757,7 @@ span.CodeMirror-selectedtext {
     color: #333 !important; }
 
 .editor-toolbar.fullscreen {
-  background-color: white;
+  background-color: #F7F7F7;
   border: 0;
   box-sizing: border-box;
   height: 60px;
@@ -721,7 +785,7 @@ span.CodeMirror-selectedtext {
     display: none; } }
 
 .editor-toolbar.disabled-for-preview a:not(.no-disable) {
-  background-color: #fff;
+  background-color: #FCFCFC;
   border-color: transparent;
   pointer-events: none;
   text-shadow: inherit; }
